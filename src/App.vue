@@ -1,9 +1,18 @@
 <script setup lang="ts">
-import MainPage from "./components/MainPage.vue";
+import Navigation from "./components/Navigation/Navigation.vue";
 </script>
 
 <template>
-  <main-page />
+  <div class="page">
+    <navigation />
+    <router-view></router-view>
+  </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.page {
+  width: 100svw;
+  height: 100svh;
+  padding-top: 80px;
+}
+</style>

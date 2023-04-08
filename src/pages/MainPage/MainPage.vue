@@ -12,7 +12,6 @@ const state = reactive<{ images: Image[]; searchQuery: string }>({
   images: [],
   searchQuery: "",
 });
-// const searchQuery = ref("");
 
 const onSearchButtonClick = async () => {
   const { searchQuery: query } = state;
